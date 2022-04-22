@@ -6,13 +6,19 @@ use Illuminate\Http\Request;
 
 class SampleController extends Controller
 {
-    public function show()
+    public function menberlist()
     {
+
+        $menberlist = [
+            'tama' => ['age' => 17 , 'race' => 'Dog' , ],
+            'yuna' => ['age' => 16 , 'race' => 'Gorilla' , ],
+            'kakeru' => ['age' => 200000 , 'race' => 'SleepingWolf' , ],
+
+        ];
+
         return view(
             'beef',
-            [
-                'beef' => 'pork',
-            ]
+            [ 'menberlist' => $menberlist ]
             );
     }
 }

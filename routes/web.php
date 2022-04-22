@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', [SampleController::class ,'menberlist']);
+Route::get('/test', [SampleController::class , 'menberlist']);

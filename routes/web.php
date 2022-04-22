@@ -31,4 +31,4 @@ Route::get('/sample', [AppleController::class, 'show']);
 Route::put('/sample', [AppleController::class, 'index']);
 
 Route::get('/cookie', [CookieController::class, 'index']);
-
+###cookie的網頁無法顯示，需要註解一行###

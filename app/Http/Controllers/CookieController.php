@@ -11,21 +11,15 @@ class CookieController extends Controller
 {
     public function index()
     {
-        throw new AccessDeniedHttpException();
 
         $students = [
-            'john' => [
-                'age' => 18,
-                'sex' => 'male',
-            ],
-            'mary' => [
-                'age' => 8,
-                'sex' => 'female',
-            ],
-            'tama' => [
-                'age' => 21,
-                'sex' => 'female',
-            ],
+            
+            'john' => ['age' => 18,'sex' => 'male',],
+
+            'mary' => ['age' => 8,'sex' => 'female',],
+
+            'tama' => ['age' => 21,'sex' => 'female',],
+
         ];
 
         return view(

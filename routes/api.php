@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\SampleController;
+use App\Http\Controllers\Student\InformationController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/sample', [SampleController::class, 'show']);
-Route::put('/sample', [SampleController::class, 'index']);
+Route::get('/vtuber', [InformationController::class, 'index01']);
+
 

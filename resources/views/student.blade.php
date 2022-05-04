@@ -1,1 +1,1 @@
-<h5>{{ $name }} age: {{ $age }}, sex: {{ $sex }}</h5>
+<h5>{{ $name }} : age: {{ $age }}, sex: {{ $sex }}</h5>

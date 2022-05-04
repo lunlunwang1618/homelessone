@@ -9,7 +9,7 @@ use Illuminate\Http\Response;
 
 class InformationController extends Controller
 {
-    public function index01(): Response
+    public function index02(): Response
     {
         $studentTama = ( new Vtuber() )
             ->setName('Tama')
